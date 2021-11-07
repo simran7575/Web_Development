@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        .main {
+            width: 100%;
+            height: 100%;
+           /* border:2px solid green; */
+        
+        
+        }
+
+        .container {
+            /* border:2px solid orangered; */
+            position:absolute;
+            width: 50%;
+            height: 100%;
+            margin:0% 25%;
+           display: block;
+            text-align: center
+        }
+        .menu {
+            /* border:2px solid aqua; */
+            margin: 0px 0px;
+            width:100%;
+            height:100%;
+            background-image: url(https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60);
+            background-position: center;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        input[type=text] {
+            margin: 10px;
+            padding: 10px;
+
+        }
+        input {
+            padding: 50px;
+        }
+
+        label {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:aliceblue;
+        }
+
+        input[type=email] {
+            margin: 10px 49px;
+            padding: 10px;
+
+        }
+      .hello {
+          padding:50px
+      }
+        [type="submit"] {
+            margin-top: 30px;
+            padding:10px 20px;
+            border-radius: 5px;
+            border:none;
+            box-shadow: 0 0 10px;
+
+        }
+        /* #bb{
+            background-color: chartreuse;
+        }
+        /* .ll {
+            background-color:brown; 
+        } */
+        /* label {
+            background-color: black;
+        } */
+        /* [val="uu"]{
+            background-color: darkmagenta;
+        } */
+        /* .ll {
+            background-color:brown; 
+        } */
+        #heading::before{
+            content:"➡"
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="menu">
+            <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: white;">Survey</h1>
+
+            <label id="bb" class="ll" val="uu">Username: </label>
+
+            <input type="text" required minlength="5" placeholder="Username" pattern="." />
+
+            <br />
+
+            <label style="margin-left: 35px;">Email: </label>
+
+            <input type="email" required placeholder="Email" pattern=".+@+\..com" />
+            <br/>
+            <input style="margin:20px  10px; float:initial" type="radio" name="gender"/>
+            <label>Male</label>
+            <input style="margin: 20px 10px"type="radio" name="gender"/>
+            <label>Female</label>
+            <input style="margin: 20px 10px"type="radio" name="gender"/>
+            <label style="margin-right: 70px;">Others</label>
+            <br/>
+            <h3 id="heading"style="color:antiquewhite">How would you rate our service?</h3 >
+               <br/>
+            <img src="star.png" width="30px" height="20px">
+            <img src="star.png" width="30px" height="20px">
+            <img src="star.png" width="30px" height="20px">
+            <img src="star.png" width="30px" height="20px">
+            <img  style="margin-right: 25px;"src="star.png" width="30px" height="20px">
+            <br/><br/>
+            <textarea  rows="8" cols="50" placeholder="Write your Comments...."></textarea>
+           <br/>
+           <input  class="hello" type="submit"/>
+        </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p{
+        display: none;
+    }
+    div:hover p{
+        display: block;
+    }
+    a:visited {
+        color:rgb(216, 139, 23)
+    }
+
+    form {
+        text-align: center;
+    }
+    h1:hover {
+        color:darkslategrey
+    }
+    button:hover {
+        background-color: green;
+        color: antiquewhite;
+        opacity: 0.7;
+    }
+</style>
+<body>
+    
+<!-- for in label tells that this label is for element that has id selector -->
+<form>
+    <h1>Login Form</h1>
+    <label>Name</label>
+    <input type="text" name="name" placeholder="Enter Your Name" required  minlength="3" pattern="[a-Z]"/>
+    <br/>
+    <label>Password</label>
+    <input type="password" name="pass" required  minlength="8" pattern="[a-Z0-9*%]"/>
+    <br/>
+    <label>Phone No.</label>
+    +91<input type="tel" minlength="10" required  pattern="[0-9]{10}"/>
+    <br/>
+    <label>Email</label>
+    <input type="email" required pattern=".+@gmail.com"/>
+<label for="selector">Select the product</label>
+<select id="selector">
+    <option value="car">Car</option>
+    <option value="bike">Bike</option>
+    <option value="bus" selected>Bus</option>
+</select>
+<br/>
+<button>Submit</button>
+</form>
+<div>
+   Hey Guys, Hover over me!!
+
+<p>I was hiding</p>
+<a href="https://facebook.com" target="_blank">I am a link</a>
+</div>
+</body>
+</html>
